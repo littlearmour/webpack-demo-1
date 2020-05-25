@@ -1,22 +1,15 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
-var path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
+const base = require("./webpack.config.base");
 
 module.exports = {
-  mode: "development",
+  ...base, //base的属性抄过来
   devtool: "inline-source-map",
   devServer: {
-   contentBase: './dist',
-},
-  entry: "./src/index.js",
-  output: {
-    filename: "index.[contenthash].js",
+    contentBase: "./dist",
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "fan",
-      template: "src/assets/index.html",
-    }),
-  ],
+  mode: "development",
   module: {
     rules: [
       {
