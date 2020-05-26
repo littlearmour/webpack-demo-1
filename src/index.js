@@ -3,7 +3,7 @@ import x from "./x.js";
 // console.log("hi");
 import jpg from "./assets/beijing.jpg";
 console.log(jpg);
-// const div = document.getElementById("app");
+const div = document.getElementById("app");
 // console.log("div");
 // console.log(div);
 // div.innerHTML = `
