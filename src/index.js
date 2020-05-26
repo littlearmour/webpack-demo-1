@@ -3,12 +3,12 @@ import x from "./x.js";
 // console.log("hi");
 import jpg from "./assets/beijing.jpg";
 console.log(jpg);
-const div = document.getElementById("app");
-console.log("div");
-console.log(div);
-div.innerHTML = `
-    <img src="${jpg}"}>
-`;
+// const div = document.getElementById("app");
+// console.log("div");
+// console.log(div);
+// div.innerHTML = `
+//     <img src="${jpg}"}>
+// `;
 
 const button = document.createElement("button");
 button.innerText = "懒加载";
